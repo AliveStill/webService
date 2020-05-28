@@ -1,0 +1,95 @@
+<SimpleMessage>
+    <status>
+<!--        1 if login success-->
+<!--        0 if login invalid-->
+    </status>
+
+    <userInfo>
+        <id>
+<!--            user id-->
+        </id>
+        <nickname>
+<!--            user nickname-->
+        </nickname>
+    </userInfo>
+
+    <friendList>好友列表
+        <friend>
+            <frinedId>
+                <!--            friend id, maybe more then one friend-->
+            </frinedId>
+            <frindNickname>
+                nickname of a friend
+            </frindNickname>
+        </friend>
+    </friendList>
+
+    <chatMessageList>离线信息
+        <message>
+            <fromId>
+<!--                id of sender, string type(8 numbers of id)        -->
+            </fromId>
+            <fromNickname>
+<!--                nickname of sender-->
+            </fromNickname>
+            <content>
+<!--                message content -->
+            </content>
+            <time>
+<!--                time of message  -->
+            </time>
+        </message>
+    </chatMessageList>
+
+    <varifyMessage>
+        <friendRequestList>好友申请
+            <frindRequest>
+                <fromId>
+                    <!--                id of sender    -->
+                </fromId>
+                <fromNickname>
+<!--                    nickname of sender-->
+                </fromNickname>
+                <content>
+<!--                    content of the message-->
+                </content>
+                <time>
+                    <!--                time of request-->
+                </time>
+            </frindRequest>
+        </friendRequestList>
+
+        <acceptRequestList>对方是否同意自己的好友申请
+            <acceptRequest>
+                <status>
+<!--                    1: accept request-->
+<!--                    0: refuse request-->
+                </status>
+                <fromId>
+<!--                    id of sender-->
+                </fromId>
+                <fromNickname>
+<!--                    nickname of sender-->
+                </fromNickname>
+                <time>
+<!--                    time of request-->
+                </time>
+            </acceptRequest>
+        </acceptRequestList>
+
+        <deleteFriendList>对方和你解除了好友关系
+            <deleteFriend>
+                <fromId>
+<!--                    id of sender-->
+                </fromId>
+                <fromNickname>
+<!--                    nickname of sender-->
+                </fromNickname>
+                <time>
+<!--                    time of delete operation-->
+                </time>
+            </deleteFriend>
+        </deleteFriendList>
+    </varifyMessage>
+
+</SimpleMessage>

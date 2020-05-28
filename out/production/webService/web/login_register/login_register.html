@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--登录界面-->
+<html>
+<head>
+    <meta charset = "utf-8"/>
+    <title>SimpleMessage</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    <script src="login_register.js"></script>
+</head>
+<body>
+<div class = "login-box">
+    <div class = "front">
+        <ul>
+            <li id="Login" onclick="switchToLogin()">Login</li>
+            <li id="Register" onclick="switchToRegister()">Register</li>
+        </ul>
+    </div>
+
+    <div class = "thing" style = 'display:block;'>
+        <div class = "item">
+            <label for="loginText"></label>
+            <input type = "text" id = "loginText" placeholder = "Username" autofocus/>
+        </div>
+        <div class = "item">
+            <label for="loginPassword"></label>
+            <input type = "password" id = "loginPassword" placeholder = "Password" />
+        </div>
+        <button class = "btn" id = "loginBtn">login</button>
+    </div>
+</div>
+<script type = "text/javascript">
+    // by default switch to Login panel
+    switchToLogin();
+</script>
+</body>
+</html>

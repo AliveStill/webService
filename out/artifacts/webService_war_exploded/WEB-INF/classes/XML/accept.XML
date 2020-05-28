@@ -1,0 +1,17 @@
+<SimpleMessage>
+    <status>
+<!--        1 if accept-->
+<!--        0 if refuse-->
+    </status>
+    <acceptFriendRequest>
+        <fromId>
+            <!--user id-->
+        </fromId>
+        <fromNickname>
+            <!--                nickname of sender-->
+        </fromNickname>
+        <time>
+            <!--                time of operation-->
+        </time>
+    </acceptFriendRequest>
+</SimpleMessage>

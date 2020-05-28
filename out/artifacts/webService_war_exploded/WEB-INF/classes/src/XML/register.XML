@@ -1,0 +1,11 @@
+<SimpleMessage>
+    <status>
+        <!--
+            1  register success
+            0  register fail
+        -->
+    </status>
+    <userId>
+        <!--        return userId if register successful -->
+    </userId>
+</SimpleMessage>
